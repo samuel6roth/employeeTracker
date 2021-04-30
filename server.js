@@ -1,7 +1,8 @@
 //Install dependencies packages
-//const consoleTable = require('console.table')
+const consoleTable = require('console.table')
 const mysql = require('mysql')
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
+const { main } = require('figures');
 //const Sequelize = require('sequelize')
 //require('dotenv').config();
 
@@ -85,16 +86,14 @@ function start() {
 };
 
 function viewEmployees() {
-    
-}
+    let query = 'SELECT * FROM employee';
+    connection.query(query, function(err, res) {
+        if (err) throw err,
+        console.table('All Employees:', res);
+        start();
+    });
+};
 
 
 
 
-
-
-
-
-//Create mysql table
-//Write to mysql table
-//Erase from mysql table
