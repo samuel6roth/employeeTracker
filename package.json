@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/samuel6roth/employeeTracker/issues"
   },
-  "homepage": "https://github.com/samuel6roth/employeeTracker#readme"
+  "homepage": "https://github.com/samuel6roth/employeeTracker#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "mysql": "^2.18.1"
+  }
 }

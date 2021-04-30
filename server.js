@@ -1,5 +1,5 @@
 //Install dependencies packages
-const consoleTable = require('console.table')
+//const consoleTable = require('console.table')
 const mysql = require('mysql')
 const inquirer = require('inquirer')
 //const Sequelize = require('sequelize')
