@@ -84,7 +84,9 @@ function start() {
     });
 };
 
-
+function viewEmployees() {
+    
+}
 
 
 
