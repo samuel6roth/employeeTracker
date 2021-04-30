@@ -2,7 +2,6 @@
 const consoleTable = require('console.table')
 const mysql = require('mysql')
 const inquirer = require('inquirer');
-const { main } = require('figures');
 //const Sequelize = require('sequelize')
 //require('dotenv').config();
 
@@ -94,6 +93,20 @@ function viewEmployees() {
     });
 };
 
+function viewDepartments() {
+    let query = 'SELECT * FROM department';
+    connection.query(query, function(err, res) {
+        if (err) throw err;
+        console.table('All Departments:', res);
+        start();
+    });
+};
 
-
-
+function viewRoles() {
+    let query = 'SELECT * FROM role';
+    connection.query(query, function(err, res) {
+        if (err) throw err;
+        console.table('All Roles:', res);
+        start();
+    });
+};
