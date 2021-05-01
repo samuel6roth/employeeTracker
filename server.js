@@ -192,6 +192,9 @@ function addDepartment() {
             });
 };
 
+function updateRole() {
+    start();
+}
 
 function addRole() {
     connection.query('SELECT * FROM department', function(err, res) {
@@ -242,6 +245,11 @@ function addRole() {
         });
     });
 };
+
+
+function deleteEmployee() {
+    start();
+}
 
 
 function exitApplication() {
