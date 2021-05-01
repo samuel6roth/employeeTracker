@@ -2,6 +2,7 @@
 const consoleTable = require('console.table')
 const mysql = require('mysql')
 const inquirer = require('inquirer');
+//module.exports = sequelize;
 //const Sequelize = require('sequelize')
 //require('dotenv').config();
 

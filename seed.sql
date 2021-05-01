@@ -16,7 +16,7 @@ VALUES
 ('Accounting'),
 ('Engineering'),
 ('Quality'),
-('Tooling')
+('Tooling');
 
 INSERT INTO role (title, salary, department_id)
 VALUES
