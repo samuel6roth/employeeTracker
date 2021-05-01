@@ -119,7 +119,7 @@ function addEmployee() {
                 {
                     name: 'first_name',
                     type: 'input', 
-                    message: "What is the employee's fist name? ",
+                    message: "What is the employee's first name? ",
                 },
                 {
                     name: 'last_name',
@@ -135,7 +135,7 @@ function addEmployee() {
                     name: 'role', 
                     type: 'list',
                     choices: function() {
-                    var roleArray = [];
+                    let roleArray = [];
                     for (let i = 0; i < res.length; i++) {
                         roleArray.push(res[i].title);
                     }
@@ -182,7 +182,7 @@ function addDepartment() {
                     {
                         name: answer.newDepartment
                     });
-                var query = 'SELECT * FROM department';
+                let query = 'SELECT * FROM department';
                 connection.query(query, function(err, res) {
                 if(err) throw err;
                 console.log('Your department has been added!');
@@ -211,11 +211,11 @@ function addRole() {
                 name: 'Department',
                 type: 'list',
                 choices: function() {
-                    var deptArry = [];
+                    let departmentCon = [];
                     for (let i = 0; i < res.length; i++) {
-                    deptArry.push(res[i].name);
+                    departmentCon.push(res[i].name);
                     }
-                    return deptArry;
+                    return departmentCon;
                 },
             }
         ]).then(function (answer) {
