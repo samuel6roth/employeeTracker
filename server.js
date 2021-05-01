@@ -88,7 +88,7 @@ function start() {
 function viewEmployees() {
     let query = 'SELECT * FROM employee';
     connection.query(query, function(err, res) {
-        if (err) throw err,
+        if (err) throw err;
         console.table('All Employees:', res);
         start();
     });
